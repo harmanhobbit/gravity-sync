@@ -41,7 +41,7 @@ LOCAL_DOCKER_BINARY=${LOCAL_DOCKER_BINARY:-'/usr/bin/docker'}               # Lo
 REMOTE_DOCKER_BINARY=${REMOTE_DOCKER_BINARY:-'/usr/bin/docker'}             # Remote Docker binary directory (default)
 LOCAL_PODMAN_BINARY=${LOCAL_PODMAN_BINARY:-'/usr/bin/podman'}               # Local Podman binary directory (default)
 REMOTE_PODMAN_BINARY=${REMOTE_PODMAN_BINARY:-'/usr/bin/podman'}             # Remote Podman binary directory (default)
-PIHOLE_CONTAINER_IMAGE=${PIHOLE_CONTAINER_IMAGE:-'pihole/pihole'}           # Official Pi-hole container image name
+PIHOLE_CONTAINER_IMAGE=${PIHOLE_CONTAINER_IMAGE:-'ghcr.io/pi-hole/pihole:latest'}           # Official Pi-hole container image name
 
 ###############################################
 ####### THE NEEDS OF THE MANY, OUTWEIGH #######
@@ -51,7 +51,7 @@ PIHOLE_CONTAINER_IMAGE=${PIHOLE_CONTAINER_IMAGE:-'pihole/pihole'}           # Of
 PH_GRAVITY_FI=${PH_GRAVITY_FI:-'gravity.db'}                        # Pi-hole database file name
 PH_CUSTOM_DNS=${PH_CUSTOM_DNS:-'custom.list'}                       # Pi-hole DNS lookup filename
 PH_CNAME_CONF=${PH_CNAME_CONF:-'05-pihole-custom-cname.conf'}       # DNSMASQ CNAME alias file
-PH_SDHCP_CONF=${PH_SDHCP_CONF:-'04-pihole-static-dhcp.conf'}        # DNSMASQ Static DHCP file
+PH_SDHCP_CONF=${PH_SDHCP_CONF:-'04-piho`le-static-dhcp.conf'}        # DNSMASQ Static DHCP file
 
 # Backup Customization
 GS_BACKUP_TIMEOUT=${GS_BACKUP_TIMEOUT:-'240'}                       # replace in gravity-sync.conf to overwrite
